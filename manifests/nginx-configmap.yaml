@@ -11,8 +11,8 @@ data:
         listen 32000;
         server_name _;
 
-        location /stockshapes {
-            proxy_pass http://localhost:3001;
+        location /stockshapes/ {
+            proxy_pass http://localhost:3001/;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -23,7 +23,7 @@ data:
             proxy_cache off;
         }
 
-        location /app2/ {
+        location /rainbowdarkness/ {
             proxy_pass http://localhost:3002/;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;

@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rainbowdarkness-service
+spec:
+  selector:
+    app: rainbowdarkness
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3002
