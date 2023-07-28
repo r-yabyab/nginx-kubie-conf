@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -7,7 +8,7 @@ data:
     events {}
     http {
       server {
-        listen 80;
+        listen 32000;
         server_name _;
 
         location /stockshapes {
