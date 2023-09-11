@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginx-config
+  name: nginx-configmap
 data:
   nginx.conf: |
     events {}
@@ -32,3 +32,5 @@ data:
         }
       }
     }
+
+
