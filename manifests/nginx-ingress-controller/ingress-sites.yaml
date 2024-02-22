@@ -2,15 +2,19 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress-sites
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
       - path: /rainbowdarkness
+        pathType: prefix
         backend:
           serviceName: rainbowdarkness-service
           servicePort: 80
       - path: /
+        pathType: prefix
         backend:
           serviceName: stockshapes-service
           servicePort: 80
