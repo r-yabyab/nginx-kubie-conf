@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-sites
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /rainbowdarkness
+        backend:
+          serviceName: rainbowdarkness-service
+          servicePort: 80
+      - path: /
+        backend:
+          serviceName: stockshapes-service
+          servicePort: 80

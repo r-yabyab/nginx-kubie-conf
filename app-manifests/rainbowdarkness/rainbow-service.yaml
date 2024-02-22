@@ -5,7 +5,7 @@ metadata:
   name: rainbowdarkness-service
 spec:
   selector:
-    app: rainbowdarkness
+    app: rainbowdarkness-server
   type: NodePort
   ports:
     - protocol: TCP
