@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: stockshapes-service
+  name: stockshapes-server-service
+  labels:
+    job: stockshapes-server-service-job
+    app: stockshapes-server-service-app
 spec:
   selector:
     app: stockshapes-server
@@ -10,3 +13,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 3001
+      name: stockshapes-server-port

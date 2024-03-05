@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Deployment
 metadata:
-  name: rainbowdarkness-deployment
+  name: rainbowdarkness-server
 spec:
   replicas: 1
   selector:

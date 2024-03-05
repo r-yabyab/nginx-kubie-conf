@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Deployment
 metadata:
-  name: stockshapes-deployment
+  name: stockshapes-server
 spec:
   replicas: 1
   selector:
