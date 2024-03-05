@@ -11,10 +11,10 @@ spec:
       - path: /rainbowdarkness
         pathType: prefix
         backend:
-          serviceName: rainbowdarkness-service
+          serviceName: rainbowdarkness-server-service
           servicePort: 80
       - path: /
         pathType: prefix
         backend:
-          serviceName: stockshapes-service
+          serviceName: stockshapes-server-service
           servicePort: 80
