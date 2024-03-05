@@ -11,6 +11,6 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 80
+      port: 30001
       targetPort: 3001
       name: stockshapes-server-port
